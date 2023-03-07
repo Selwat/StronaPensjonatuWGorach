@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+body {
+    max-width: 100vw;
+    max-height: max-content;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.baner {
+    
+    height: content;
+   background-color: cornsilk;
+   display: flex;
+    gap: 10%;
+    padding-left: 20%;
+    border-bottom: 1px solid rgb(218, 216, 216);
+    position: fixed;
+    margin-top: -9.5em;
+    z-index: 4;
+    width: 100vw;
+  
+}
+#logo {
+    width:9vw;
+    position: absolute;
+    margin-left:-17vw;
+    margin-top:-3vh;
+    z-index: 3;
+}
+
+.galeria-baner , .cennik , .kontakt , .oferta {
+    font-family: 'Qwitcher Grypen';
+    width: max-content;
+    padding: 30px;
+    padding-top:10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.galeria{
+   
+    margin-top:20vh;
+  margin-left: 1vw;
+}
+
+#firstpct{
+    position: absolute;
+    width: 49vw;
+    transition: 0.7s;
+    border: 4px solid white;
+} 
+#firstpct:hover{
+    width:50vw;
+  
+} 
+
+
+#secondpct{
+   
+    position: absolute;
+    margin-left: 47vw;
+    width: 49vw;
+    border: 4px solid white;
+    transition: 0.7s;
+} 
+#secondpct:hover{
+    width: 50vw;
+} 
+
+
+#thirdpct{
+    z-index: 2;
+    margin-top: 50vh;
+    position: absolute;
+    margin-left: 35vw;
+    width: 27vw;
+    border: 4px solid white;
+    transition: 0.7s;
+} 
+#thirdpct:hover{
+    width: 26vw;
+} 
+
+
+#fourpct{
+    margin-top: 65vh;
+    position: absolute;
+   z-index: -1;
+    width: 49vw;
+    border: 4px solid white;
+    transition: 0.7s;
+    z-index: 1;
+   
+    
+} 
+#fourpct:hover{
+    width: 50vw;
+
+}
+
+
+
+#fifepct {
+    margin-top: 67vh;
+    position: absolute;
+   z-index: -1;
+    width: 49vw;
+    border: 4px solid white;
+    transition: 0.7s;
+    z-index: 1;
+    margin-left: 47vw;
+
+}
+
+#fifepct:hover {
+    width: 50vw;
+}
+
+/*-------------------------------------------------------*/
+.opis {
+    position: absolute;
+    margin-top:180vh;
+    width: 700px;
+    margin-left:25vw;
+    font-family: 'Combo', cursive;
+   
+}
+.bold {
+    font-weight: bold;
+}
+
+.funkcje {
+    position: absolute;
+    display: flex;
+    margin-top:140vh;
+    gap: 10px;
+    margin-left:30vh;
+}
+.zdj {
+    border: 1px solid gray;
+    width: 120px;
+    height:120px;
+    justify-content: center;
+    text-align: center;
+    padding-top:15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.zdj2 {
+    border: 1px solid gray;
+    width: 120px;
+    height:114px;
+    justify-content: center;
+    text-align: center;
+    padding-top:21px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.zdj:hover {
+   margin-left:-2.5px;
+   margin-top: -2.5px;
+    width:125px;
+    height:125px;
+}
+.zdj2:hover {
+    margin-left:-2.5px;
+    margin-top: -2.5px;
+    width:125px;
+    height:125px;
+    
+}
