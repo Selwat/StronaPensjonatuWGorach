@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 .baner {
-    
+    position: relative;
     height: content;
    background-color: cornsilk;
    display: flex;
@@ -16,7 +16,7 @@ body {
     padding-left: 20%;
     border-bottom: 1px solid rgb(218, 216, 216);
     position: fixed;
-    margin-top: -9.5em;
+    top: 0px;
     z-index: 4;
     width: 100vw;
   
@@ -38,8 +38,11 @@ body {
     cursor: pointer;
 }
 .galeria{
-   
-    margin-top:20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    height: 100%;
+    top: 100px;
   margin-left: 1vw;
 }
 
@@ -59,7 +62,7 @@ body {
    
     position: absolute;
     margin-left: 47vw;
-    width: 49vw;
+    width: 49.5vw;
     border: 4px solid white;
     transition: 0.7s;
 } 
@@ -104,7 +107,7 @@ body {
     margin-top: 67vh;
     position: absolute;
    z-index: -1;
-    width: 49vw;
+    width: 49.5vw;
     border: 4px solid white;
     transition: 0.7s;
     z-index: 1;
@@ -118,55 +121,47 @@ body {
 
 /*-------------------------------------------------------*/
 .opis {
-    position: absolute;
-    margin-top:180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 700px;
-    margin-left:25vw;
     font-family: 'Combo', cursive;
-   
+    margin: 15vh auto;
 }
 .bold {
     font-weight: bold;
 }
 
 .funkcje {
-    position: absolute;
+    position: relative;
     display: flex;
-    margin-top:140vh;
+    margin-top:150vh;
     gap: 10px;
-    margin-left:30vh;
+    justify-content: center;
 }
 .zdj {
     border: 1px solid gray;
     width: 120px;
     height:120px;
-    justify-content: center;
+    bottom: 0px;
     text-align: center;
-    padding-top:15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
     cursor: pointer;
     transition: 0.2s;
 }
-.zdj2 {
-    border: 1px solid gray;
-    width: 120px;
-    height:114px;
-    justify-content: center;
-    text-align: center;
-    padding-top:21px;
-    cursor: pointer;
-    transition: 0.2s;
+.zdj img{
+    width: 50%;
+    height: 45%;
 }
-
+.zdj p {
+    position: relative;
+    bottom: 17px;
+}
 .zdj:hover {
    margin-left:-2.5px;
    margin-top: -2.5px;
     width:125px;
     height:125px;
-}
-.zdj2:hover {
-    margin-left:-2.5px;
-    margin-top: -2.5px;
-    width:125px;
-    height:125px;
-    
 }

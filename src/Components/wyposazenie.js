@@ -13,42 +13,38 @@ const Wyposazenie = () => {
     <div className="funkcje">
       <div className="zdj">
         <img src={apartamenty} alt="Apartamenty" />
-        Apartamenty
+        <p>Apartamenty</p>
       </div>
-      <div className="zdj2">
+      <div className="zdj">
         <img src={widoki} alt="Widok na góry" />
-        <br />
-        widok na góry
+        <p>widok na góry</p>
       </div>
-      <div className="zdj2">
+      <div className="zdj">
         <img src={ogrod} alt="Ogród" />
-        <br />
-        ogród
+        <p>ogród</p>
       </div>
-      <div className="zdj2">
+      <div className="zdj">
         <img src={zwierzeta} alt="Zwierzęta domowe są akceptowalne" />
-        <br />
-        zwierzęta<br />domowe są akceptowalne
+        <p>zwierzęta domowe są akceptowalne</p>
       </div>
       <div className="zdj">
         <img src={pralka} alt="Pralka" />
-        <br />
-        pralka
+        <p>pralka</p>
       </div>
       <div className="zdj">
         <img src={wifi} alt="WiFi" />
         <br />
-        WiFi
+        <p>WiFi</p>
       </div>
       <div className="zdj">
         <img src={balkon} alt="Balkon" />
         <br />
-        balkon
+        <p>balkon</p>
       </div>
       <div className="zdj">
         <img src={sauna} alt="Sauna" />
         <br />
-        sauna
+        <p>sauna</p>
       </div>
     </div>
   );
