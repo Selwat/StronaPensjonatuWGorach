@@ -5,8 +5,7 @@ return (
 <>
 <p className="opis">
 W obiekcie Tatrzańska Ostoja Family & Friends przysługuje Ci zniżka
-Genius! Aby zaoszczędzić w tym obiekcie, wystarczy, że{" "}
-<a href="/">się zalogujesz</a>.
+Genius! Aby zaoszczędzić w tym obiekcie, wystarczy, że <a href="/">się zalogujesz.</a>
 <br />
 <br />
 Obiekt Tatrzańska Ostoja jest dogodnie usytuowany obok drogi krajowej nr

@@ -3,6 +3,7 @@ import Baner from "./Components/baner";
 import Galeria from "./Components/galeria";
 import Wyposazenie from "./Components/wyposazenie";
 import Opis from "./Components/opis";
+import Atuty from "./Components/AtutyObiektu";
 import "./style.css";
 const App = () => {
     return(
@@ -10,7 +11,10 @@ const App = () => {
             <Baner />
             <Galeria />
             <Wyposazenie />
-            <Opis />
+            <div className="OpisWApp">
+            <Opis /> 
+            <Atuty />
+            </div>
         </>
     );
 };
