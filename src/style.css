@@ -230,3 +230,9 @@ body {
 .DostepnoscUwaga .material-symbols-outlined{
     margin: 14px 10px 0px 0px;
 }
+
+.DostepnoscData{
+    background: #fff;
+    border: yellow 3px solid;
+    
+}
