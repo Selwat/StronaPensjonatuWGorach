@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    padding-bottom: 1000px;
 }
 .baner {
     position: relative;
@@ -232,7 +233,123 @@ body {
 }
 
 .DostepnoscData{
-    background: #fff;
-    border: yellow 3px solid;
-    
+    background:none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
 }
+
+.OknoWyboruDaty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .OknoDostepnosci {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .OknoWymeldowania {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .DostepnoscData {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .DostepnoscData:hover {
+    background-color: #ff6f00;
+  }
+  
+  .DostepnoscReset {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    }
+    
+    .DostepnoscReset:hover {
+    background-color: #c5c5c5;
+    }
+    
+    .WymeldowanieData {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    }
+    
+    .WymeldowanieData:hover {
+    background-color: #3d8b3d;
+    }
+    
+    .OknoDostepnosci {
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+    
+    .DostepnoscData, .WymeldowanieData {
+    width: 50%;
+    }
+
+    .WymeldowanieData {
+        padding: 10px 20px;
+        background-color: #ff8c00;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      
+      .WymeldowanieData:hover {
+        background-color: #ff6f00;
+      }
+      
