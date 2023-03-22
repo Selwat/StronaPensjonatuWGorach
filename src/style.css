@@ -221,7 +221,7 @@ body {
     display: block;
     padding: 25px;
     height: min-content;
-    ;
+    
 }
 .DostepnoscUwaga{
     color: red;
@@ -241,9 +241,9 @@ body {
 
 .OknoWyboruDaty {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 10px;
     align-items: center;
-    margin-top: 20px;
   }
   
   .OknoDostepnosci {
@@ -300,20 +300,22 @@ body {
   }
   
   .DostepnoscReset {
-    padding: 10px 20px;
-    background-color: #e0e0e0;
-    color: #333;
+    display: inline-block;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
+    color: #4a4a4a;
     font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s ease-in-out;
     }
-    
     .DostepnoscReset:hover {
-    background-color: #c5c5c5;
+        background-color: #f5f5f5;
     }
-    
     .WymeldowanieData {
     padding: 10px 20px;
     background-color: #4caf50;
@@ -331,11 +333,11 @@ body {
     
     .OknoDostepnosci {
     margin-right: 0;
-    margin-bottom: 20px;
+
     }
     
     .DostepnoscData, .WymeldowanieData {
-    width: 50%;
+    width: 30%;
     }
 
     .WymeldowanieData {

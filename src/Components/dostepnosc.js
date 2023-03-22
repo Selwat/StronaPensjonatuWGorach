@@ -4,6 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 const Dostepnosc = () => {
   const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedWymeldowania, setSelectedWymeldowania] = useState(null);
   const [isDostepnoscVisible, setDostepnoscVisible] = useState(false);
   const [isResetVisible, setResetVisible] = useState(false);
   const [isWymeldowanieVisible, setWymeldowanieVisible] = useState(false);
@@ -30,14 +31,31 @@ const Dostepnosc = () => {
 
   const handleResetClick = () => {
     setSelectedDate(null);
+    setSelectedWymeldowania(null);
     setDostepnoscVisible(false);
     setResetVisible(false);
     setWymeldowanieVisible(false);
+   
   };
   /////////////////////////
   const handleWymeldujClick = () => {
     setWymeldowanieVisible(true);
     setResetVisible(true);
+  };
+  const handleDateWymeldujChange = (date) => {
+    setSelectedWymeldowania(date);
+  };
+
+  const renderDateWymeldujPicker = () => {
+    return (
+      <DatePicker
+        selected={selectedWymeldowania}
+        onChange={handleDateWymeldujChange}
+        dateFormat="dd.MM.yyyy"
+        minDate={selectedDate}
+      />
+      
+    );
   };
 
 
@@ -46,7 +64,7 @@ const Dostepnosc = () => {
   return (
     <div className="DostepnoscDiv">
       <h2>Dostępność</h2>
-      <div className="DostepnoscUwaga">
+      <div className="DostepnoscUwaga" style={{ display: isDostepnoscVisible ? 'none' : 'flex' }}>
         <span class="material-symbols-outlined">error</span>
         <p>Wybierz daty, aby zobaczyć dostępność i ceny w obiekcie</p>
       </div>
@@ -63,7 +81,7 @@ const Dostepnosc = () => {
         <div className="OknoWymeldowania" style={{ display: isWymeldowanieVisible ? 'block' : 'none' }}>
           <div className="input-container">
             <label>Wybierz datę wymeldowania:</label>
-            {renderDatePicker()}
+            {renderDateWymeldujPicker()}
           </div>
         </div>
         
