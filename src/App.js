@@ -5,6 +5,7 @@ import Wyposazenie from "./Components/wyposazenie";
 import Opis from "./Components/opis";
 import Atuty from "./Components/AtutyObiektu";
 import Dostepnosc from "./Components/dostepnosc";
+import Fotter from "./Components/Fotter";
 import "./style.css";
 const App = () => {
     return(
@@ -17,6 +18,7 @@ const App = () => {
             <Atuty />
             </div>
             <Dostepnosc />
+            <Fotter />
         </>
     );
 };

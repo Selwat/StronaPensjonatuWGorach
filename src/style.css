@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    padding-bottom: 1000px;
+    overflow-x: hidden;
 }
 .baner {
     position: relative;
@@ -220,7 +220,7 @@ body {
     margin: 2vw 10vh;
     display: block;
     padding: 25px;
-    height: min-content;
+    height: max-content;
     
 }
 .DostepnoscUwaga{
@@ -309,7 +309,7 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 1vw 1vh;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     }
@@ -355,3 +355,17 @@ body {
         background-color: #ff6f00;
       }
       
+      .fotter{
+        height: 20vh;
+        background-color: cornsilk;
+        margin-top: 150px;
+        width: 100vw;
+        text-align: center;
+        font-family: 'Qwitcher Grypen';
+        font-size: 16px;
+        padding-top: 7px;
+      }
+.fotter p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}

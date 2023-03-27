@@ -58,9 +58,6 @@ const Dostepnosc = () => {
     );
   };
 
-
-
-
   return (
     <div className="DostepnoscDiv">
       <h2>Dostępność</h2>
