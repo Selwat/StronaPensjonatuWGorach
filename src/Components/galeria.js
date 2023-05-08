@@ -8,11 +8,15 @@ import fifepct from './obrazy/zdj5.jpg';
 const Galeria = () => {
   return (
     <div className="galeria">
-      <img src={firstpct} id="firstpct" alt="firstpct" />
-      <img src={secondpct} id="secondpct" alt="secondpct" />
+      <div className="row1">
+        <img src={firstpct} id="firstpct" alt="firstpct" />
+        <img src={secondpct} id="secondpct" alt="secondpct" />
+      </div>
       <img src={thirdpct} id="thirdpct" alt="thirdpct" />
-      <img src={fourpct} id="fourpct" alt="fourpct" />
-      <img src={fifepct} id="fifepct" alt="fifepct" />
+      <div className="row2">
+        <img src={fourpct} id="fourpct" alt="fourpct" />
+        <img src={fifepct} id="fifepct" alt="fifepct" />
+      </div>
     </div>
   );
 };

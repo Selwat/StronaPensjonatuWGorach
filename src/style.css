@@ -7,145 +7,167 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-}
-.baner {
-    position: relative;
-    height: content;
-   background-color: cornsilk;
-   display: flex;
-    gap: 10%;
-    padding-left: 20%;
-    border-bottom: 1px solid rgb(218, 216, 216);
-    position: fixed;
-    top: 0px;
-    z-index: 4;
-    width: 100vw;
+  }
   
-}
-#logo {
-    width:9vw;
-    position: absolute;
-    margin-left:-17vw;
-    margin-top:-3vh;
-    z-index: 3;
-}
-
-.galeria-baner , .cennik , .kontakt , .oferta {
-    font-family: 'Qwitcher Grypen';
-    width: max-content;
-    padding: 30px;
-    padding-top:10px;
-    font-size: 50px;
-    cursor: pointer;
-}
-.galeria{
+  .galeria {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 100%;
     top: 100px;
-  margin-left: 1vw;
-}
-
-#firstpct{
-    position: absolute;
-    width: 49vw;
-    transition: 0.7s;
-    border: 4px solid white;
-} 
-#firstpct:hover{
-    width:50vw;
+  }
   
-} 
-
-
-#secondpct{
-   
-    position: absolute;
-    margin-left: 47vw;
-    width: 49.5vw;
-    border: 4px solid white;
-    transition: 0.7s;
-} 
-#secondpct:hover{
-    width: 50vw;
-} 
-
-
-#thirdpct{
-    z-index: 2;
-    margin-top: 50vh;
-    position: absolute;
-    margin-left: 35vw;
-    width: 27vw;
-    border: 4px solid white;
-    transition: 0.7s;
-} 
-#thirdpct:hover{
-    width: 26vw;
-} 
-
-
-#fourpct{
-    margin-top: 65vh;
-    position: absolute;
-   z-index: -1;
+  .row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #firstpct {
     width: 49vw;
     border: 4px solid white;
     transition: 0.7s;
-    z-index: 1;
-   
-    
-} 
-#fourpct:hover{
+  }
+  
+  #firstpct:hover {
     width: 50vw;
-
-}
-
-
-
-#fifepct {
-    margin-top: 67vh;
-    position: absolute;
-   z-index: -1;
-    width: 49.5vw;
+  }
+  
+  #secondpct {
+    width: 49vw;
     border: 4px solid white;
     transition: 0.7s;
-    z-index: 1;
-    margin-left: 47vw;
-
-}
-
-#fifepct:hover {
+  }
+  
+  #secondpct:hover {
     width: 50vw;
-}
-
+  }
+  
+  #thirdpct {
+    position: absolute;
+    width: 40vw;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    transition: 0.7s;
+  }
+  
+  #thirdpct:hover {
+    width: 41vw;
+  }
+  
+  .row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fourpct {
+    width: 49vw;
+    border: 4px solid white;
+    transition: 0.7s;
+  }
+  
+  #fourpct:hover {
+    width: 50vw;
+  }
+  
+  #fifepct {
+    width: 49vw;
+    border: 4px solid white;
+    transition: 0.7s;
+  }
+  
+  #fifepct:hover {
+    width: 50vw;
+  }
+  @media screen and (max-width: 768px) {
+    .galeria{
+        top:80px;
+    }
+  }
+  /* ------------------------------- */
+  .baner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0.5vh 2vw;
+    background-color: cornsilk;
+    border-bottom: 1px solid rgb(218, 216, 216);
+    z-index: 4;
+  }
+  
+  #logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .galeria-baner,
+  .cennik,
+  .kontakt,
+  .oferta {
+    font-family: "Qwitcher Grypen";
+    font-size: 5vw;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    /* Adjust the styles for larger screens */
+    #logo {
+      max-width: 150px;
+    }
+    .baner{
+        padding: 2vh 2vw;
+    }
+    .galeria-baner,
+    .cennik,
+    .kontakt,
+    .oferta {
+      font-size: 4vw;
+      max-width: 200px;
+      padding: 1vw 4vw;
+    }
+  }
+  
 /*-------------------------------------------------------*/
 
 .funkcje {
+    margin-left: 5%;
     display: flex;
-    margin-top:150vh;
+    margin-top: 30vh;
     gap: 10px;
     justify-content: center;
+    max-width: 90%;
 }
+
 .zdj {
     border: 1px solid gray;
     width: 120px;
     height:120px;
     bottom: 0px;
     text-align: center;
+    align-items: center;
     padding-bottom: 10px;
     padding-top: 5px;
     cursor: pointer;
     transition: 0.2s;
 }
 .zdj img{
-    width: 50%;
-    height: 45%;
+    width: 60px;
+    
 }
 .zdj p {
     position: relative;
-    bottom: 17px;
+    bottom: 10px;
 }
 .zdj:hover {
    margin-left:-2.5px;
@@ -153,7 +175,44 @@ body {
     width:125px;
     height:125px;
 }
-
+/* Dla ekranów o szerokości mniejszej lub równej 768px */
+@media screen and (max-width: 768px) {
+    .funkcje {
+      flex-wrap: wrap;
+      margin-top: 20vh;
+    }
+    .zdj {
+      width: 100px;
+      height: 100px;
+    }
+    .zdj img {
+      width: 40%;
+      height: 35%;
+    }
+    .zdj p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Dla ekranów o szerokości mniejszej lub równej 480px */
+  @media screen and (max-width: 480px) {
+    .funkcje {
+      margin-top: 15vh;
+    }
+    .zdj {
+      width: 80px;
+      height: 80px;
+    }
+    .zdj img {
+      width: 30%;
+      height: 25%;
+    }
+    .zdj p {
+      font-size: 14px;
+    }
+  }
+  
+  
 .opis {
     position: static;
     display: block;
